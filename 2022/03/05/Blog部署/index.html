@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Blog部署 - Tlo_oh</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Tlo_oh"><meta name="msapplication-TileImage" content="/img/mypicture.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Tlo_oh"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="记录一下 hexo-theme-amazing 配置历程  持续更新 ing…………"><meta property="og:type" content="blog"><meta property="og:title" content="Tlo_oh"><meta property="og:url" content="https://removeif.github.io/"><meta property="og:site_name" content="Tlo_oh"><meta property="og:description" content="记录一下 hexo-theme-amazing 配置历程  持续更新 ing…………"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://removeif.github.io/img/mypicture.jpg"><meta property="article:published_time" content="2022-03-05T13:00:00.000Z"><meta property="article:modified_time" content="2022-03-06T13:10:00.000Z"><meta property="article:author" content="removeif"><meta property="article:tag" content="杂项"><meta property="article:tag" content="blog"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/mypicture.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/03/05/Blog%E9%83%A8%E7%BD%B2/"},"headline":"Tlo_oh","image":["https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306154116.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306154421.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306154536.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155026.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155340.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155842.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155955.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306164711.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170234.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170548.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170709.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170823.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170928.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306171456.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306171856.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306172104.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306172217.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306175841.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306174835.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306174910.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306175110.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307153903.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306201917.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306202031.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306203148.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306203449.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306205741.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307163301.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307185801.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307190042.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307190256.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307190829.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232819.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232511.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232559.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232734.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220308104919.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220308105049.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220308105131.png"],"datePublished":"2022-03-05T13:00:00.000Z","dateModified":"2022-03-06T13:10:00.000Z","author":{"@type":"Person","name":"Tlo_oh"},"description":"记录一下 hexo-theme-amazing 配置历程  持续更新 ing…………"}</script><link rel="canonical" href="http://example.com/2022/03/05/Blog%E9%83%A8%E7%BD%B2/"><link rel="icon" href="/img/mypicture.jpg"><meta name="referrer" content="no-referrer-when-downgrade"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><script async="" referrerpolicy="no-referrer" src="//cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script src="/js/md5.min.js"></script><meta name="generator" content="Hexo 5.4.1"></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Tlo_oh" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/media">Media</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Join Gitter" href="https://gitter.im/hexo-theme-amazing/community"><i class="fab fa-gitter"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif/hexo-theme-amazing"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><!--!--><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2022-03-05  <span class="level-item"> Tlo_oh </span><a class="commentCountImg" href="/2022/03/05/Blog%E9%83%A8%E7%BD%B2/#comment-container"><span class="display-none-class">/2022/03/05/Blog部署/</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="54ec208c5d988900e16d1e696f2ca921">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>15 分钟  <i class="fas fa-pencil-alt"> </i>2.2 k</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">Blog部署</h1><div class="content"><blockquote>
+<p>记录一下 hexo-theme-amazing 配置历程 </p>
+<p>持续更新 ing…………</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="1-背景修改"><a href="#1-背景修改" class="headerlink" title="1.背景修改"></a>1.背景修改</h2><ul>
+<li><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a><strong>问题描述</strong></h3></li>
+</ul>
+<p>​    原来的背景很花，不是很喜欢，尤其是在深色模式下，加载会出现蓝蓝花花的显示，对于我个人来说不是很好</p>
+<p>类似这样：                            </p>
+<p>​    <img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306154116.png" alt="image-20220306154114409"></p>
+<ul>
+<li><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a><strong>解决方法：</strong></h3><p>​    去  <code>hexo-theme-amazing/include/style/mystyle/base.styl</code>文件修改：</p>
+<p>对比我的参考：</p>
+<p>​    <img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306154421.png" alt="image-20220306154421291"></p>
+</li>
+</ul>
+<p>​        删掉这个部分就好了</p>
+<p>​        <img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306154536.png" alt="image-20220306154535726"></p>
+<ul>
+<li><h3 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a><strong>效果预览</strong></h3><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155026.png" alt="image-20220306155026164"></li>
+</ul>
+<p>​    </p>
+<p>​    这样看起来就清爽很多了</p>
+<h2 id="2-文章折叠"><a href="#2-文章折叠" class="headerlink" title="2.文章折叠"></a>2.文章折叠</h2><ul>
+<li><p><strong>问题描述</strong></p>
+<p>打开首页每一篇博文都是完整的展露出来，非常不适合平时的浏览习惯，类似下面这样，一展到底……</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155340.png" alt="image-20220306155340343"></p>
+</li>
+</ul>
+<ul>
+<li><p><strong>解决办法</strong></p>
+<p>简单来讲就是在你撰写的文档里面添加： <!-- more --></p>
+<p>类似下面这样</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155842.png" alt="image-20220306155841716"></p>
+</li>
+</ul>
+<p>然后看看预览效果：</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306155955.png" alt="image-20220306155954761"></p>
+<p>确实折叠了，但好像不咋的好看，但做法就是如此</p>
+<p>如果写博文的，可以自己放一张图进去？</p>
+<ul>
+<li><p><strong>预览效果</strong></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306164711.png" alt="image-20220306164710461"></p>
+</li>
+</ul>
+<h2 id="3-博客评论数更新"><a href="#3-博客评论数更新" class="headerlink" title="3.博客评论数更新"></a>3.博客评论数更新</h2><ul>
+<li><p><strong>问题描述</strong></p>
+<p>注意这个地方的数据不是真实的</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170234.png" alt="image-20220306170233749"></p>
+</li>
+<li><p><strong>解决办法</strong></p>
+<p>1）新建放评论的仓库</p>
+<p><strong>一定为公有的！！</strong></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170548.png" alt="image-20220306170547692"></p>
+</li>
+</ul>
+<p>然后出现如下页面；</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170709.png" alt="image-20220306170708633"></p>
+<p>我们先不用管，直接点击个人头像来到个人设置界面：</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170823.png" alt="image-20220306170822627"></p>
+<p><strong>(2)新建APP</strong></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306170928.png" alt="image-20220306170927551"></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306171456.png" alt="image-20220306171456357"></p>
+<p>域名前面貌似要加 <code>http(s)</code>，不然会报错 </p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306171856.png" alt="image-20220306171855586"></p>
+<p><strong>2）生成客户端秘钥</strong></p>
+<p>完成好前面步骤后，会来到如下页面</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306172104.png" alt="image-20220306172104410"></p>
+<p>我们点击生成Client secrets，输入密码后，就能看到生成的了</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306172217.png" alt="image-20220306172217402"></p>
+<p><strong>（4）配置文件修改</strong></p>
+<p>改成我们刚刚修改的就好了</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306175841.png" alt="image-20220306175840641"></p>
+<h2 id="4-改中文"><a href="#4-改中文" class="headerlink" title="4.改中文"></a>4.改中文</h2><p>根目录下，找到配置文件</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306174835.png" alt="image-20220306174835189"></p>
+<p>将 <code>en -&gt; zh-CN</code> 就行了</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306174910.png" alt="image-20220306174910088">·</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># </span><span class="language-bash">清除缓存、部署就OK</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p><strong>效果预览</strong></p>
+<p>可以看到些许地方都变成中文了，但是顶部导航栏仍然是中文，大家可以直接去主题的   <strong>config.yml</strong>    文件，手动翻译一下就好了吧</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306175110.png" alt="image-20220306175109502"></p>
+</li>
+</ul>
+<p><strong>查阅了issues，作者说这里确实要手动改！！！</strong></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307153903.png" alt="image-20220307153900782"></p>
+<h2 id="5-yaml-front-matter"><a href="#5-yaml-front-matter" class="headerlink" title="5.yaml front matter"></a>5.yaml front matter</h2><h3 id="1）快速开始"><a href="#1）快速开始" class="headerlink" title="1）快速开始"></a>1）快速开始</h3><p>Front-matter <strong>是且只能是</strong>文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量</p>
+<p>for example，这是新建的md文档</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306201917.png" alt="image-20220306201915420"></p>
+<p>我们在首行输入     <code>---</code>    -&gt;   回车；</p>
+<p>然后就会出现了书写区域</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306202031.png" alt="image-20220306202030606"></p>
+<h3 id="2）参数解释"><a href="#2）参数解释" class="headerlink" title="2）参数解释"></a>2）参数解释</h3><p>以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
+<p>详细的就不说了，以后有好的参考博客，我会贴出来的</p>
+<p>参考一：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42252518/article/details/99550466?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1.queryctrv4&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~BlogCommendFromBaidu~Rate-1.queryctrv4&utm_relevant_index=1">front-matter使用详解</a></p>
+<p>参考二：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_38747027/article/details/107967518">hexo博客front-matter格式</a></p>
+<table>
+<thead>
+<tr>
+<th align="left">配置选项</th>
+<th align="left">默认值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">title</td>
+<td align="left"><code>Markdown</code> 的文件标题</td>
+<td align="left">文章标题，强烈建议填写此选项</td>
+</tr>
+<tr>
+<td align="left">date</td>
+<td align="left">文件创建时的日期时间</td>
+<td align="left">发布时间，强烈建议填写此选项，且最好保证全局唯一</td>
+</tr>
+<tr>
+<td align="left">author</td>
+<td align="left">根 <code>_config.yml</code> 中的 <code>author</code></td>
+<td align="left">文章作者</td>
+</tr>
+<tr>
+<td align="left">img</td>
+<td align="left"><code>featureImages</code> 中的某个值</td>
+<td align="left">文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td>
+</tr>
+<tr>
+<td align="left">top</td>
+<td align="left"><code>true</code></td>
+<td align="left">推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td>
+</tr>
+<tr>
+<td align="left">cover</td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td>
+</tr>
+<tr>
+<td align="left">coverImg</td>
+<td align="left">无</td>
+<td align="left"><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td>
+</tr>
+<tr>
+<td align="left">password</td>
+<td align="left">无</td>
+<td align="left">文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td>
+</tr>
+<tr>
+<td align="left">toc</td>
+<td align="left"><code>true</code></td>
+<td align="left">是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td>
+</tr>
+<tr>
+<td align="left">mathjax</td>
+<td align="left"><code>false</code></td>
+<td align="left">是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td>
+</tr>
+<tr>
+<td align="left">summary</td>
+<td align="left">无</td>
+<td align="left">文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td>
+</tr>
+<tr>
+<td align="left">categories</td>
+<td align="left">无</td>
+<td align="left">文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td>
+</tr>
+<tr>
+<td align="left">tags</td>
+<td align="left">无</td>
+<td align="left">文章标签，一篇文章可以多个标签</td>
+</tr>
+</tbody></table>
+<h3 id="3）使用效果"><a href="#3）使用效果" class="headerlink" title="3）使用效果"></a>3）使用效果</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2022-03-05 20:00:00</span></span><br><span class="line"><span class="attr">summary:</span> <span class="comment"># 文章摘要</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">top:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">img:</span> <span class="string">&#x27;https://img-blog.csdnimg.cn/20200309120551356.png&#x27;</span> <span class="comment"># 设置文章背景图，设置为外链图片，访问快</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签1</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签2</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">test</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Tlo_oh</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306203148.png" alt="image-20220306203147417"></p>
+<p>我们将它部署到博客，本地预览效果</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306203449.png" alt="image-20220306203449005"></p>
+<p>从这个效果和对比，应该可以看出哪里改动了</p>
+<p>所以根据我个人的需要，应该这样写：</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220306205741.png" alt="image-20220306205741276"></p>
+<h3 id="4）总结"><a href="#4）总结" class="headerlink" title="4）总结"></a><strong>4）总结</strong></h3><p>这个 <code>img</code> 没啥用首先，每个主题的front-matter不一样，我看了好多，建议看作者的主题配置参考：<a target="_blank" rel="noopener" href="https://ppoffice.github.io/hexo-theme-icarus/Configuration/icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/#%E9%A1%B5%E9%9D%A2%E5%85%83%E4%BF%A1%E6%81%AF">Icarus (ppoffice.github.io)</a></p>
+<p>效果如下：（这里是本地引用，也可以引用图床的外链啊）</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307163301.png" alt="image-20220307163259152"></p>
+<p>然后其余几个数学公式、置顶啥的根据需要吧；</p>
+<p>往后的博客就按照这个格式来发布，相对来说还直观一点,</p>
+<p>如果再浏览长篇博客的时候，可以加上toc： ture,这样在盘边就会生成目录，方便浏览</p>
+<p>这里放一个参考：<a target="_blank" rel="noopener" href="https://charlesnord.github.io/2017/03/05/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">参考1</a></p>
+<p><a target="_blank" rel="noopener" href="https://juniorprincewang.github.io/2017/08/01/hexo-MarkDown/">参考2</a></p>
+<p>里面有讲到用插件，这个之后再折腾吧……</p>
+<h2 id="6-widgets增减"><a href="#6-widgets增减" class="headerlink" title="6.widgets增减"></a>6.widgets增减</h2><p>为了简化主页的展示，可以对这些模块进行删减，或者移动到右边去；</p>
+<p>因为我这是刚刚开始，所以有一些暂时还没什么用</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307185801.png"></p>
+<p>我们来到主题目录下的 <code>_config.yml</code>  </p>
+<p>每个 - 开始的都是一个模块，我们根据需要注释掉就行</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307190042.png"></p>
+<p>我这里注释的是  <strong>链接</strong>  和  <strong>评论</strong>    部分（这里 - 也要一起注释，不然编译会报错）</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307190256.png"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 部署到服务器</span></span><br><span class="line">hexo s -d</span><br></pre></td></tr></table></figure>
+
+<p>观看效果</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307190829.png"></p>
+<h2 id="7-评论数"><a href="#7-评论数" class="headerlink" title="7.评论数"></a>7.评论数</h2><p>F12检查</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232819.png" alt="image-20220307232818489"></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232511.png" alt="image-20220307232508878"></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232559.png" alt="image-20220307232558559"></p>
+<p>报错这个</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220307232734.png" alt="image-20220307232733817"></p>
+<p>据说华东节点用不了，于是我又改用国际版的</p>
+<p>仍然报错</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220308104919.png" alt="image-20220308104916934"></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220308105049.png" alt="image-20220308105048874"></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220308105131.png" alt="image-20220308105131312"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Blog部署</p><p><a href="http://example.com/2022/03/05/Blog部署/">http://example.com/2022/03/05/Blog部署/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><a href="http://example.com"><p>Tlo_oh</p></a></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-03-05</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-03-06</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="recommend-area"><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/2022/03/06/mytest/" target="_blank">我的测试</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/03/06/mytest/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">我的测试</span></a></div></nav><!--!--><div class="card"><div class="card-content"><div class="title is-5">评论</div><div class="content" id="comment-container"></div><script>var valine = new Valine({
+            el: '#comment-container' ,
+            notify: false,
+            verify: false,
+            appId: '60P1Vz5jjKRwSD6k66ARswSd-MdYXbMMI',
+            appKey: 'bYS8KxsiT60tT1FA7YuO0jJh',
+            placeholder: '留下您的高见！',
+            avatar: 'mp',
+            avatarForce: false,
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            visitor: false,
+            highlight: true,
+            recordIP: false,
+            path:'/2022/03/05/Blog部署/',
+            lang:'zh-CN',
+            enableQQ:true,
+            requiredFields:["nick","mail","link"]
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="is-flex is-mobile" href="#1-背景修改"><span>1.背景修改</span></a><ul class="menu-list"><li><a class="is-flex is-mobile" href="#问题描述"><span>问题描述</span></a></li><li><a class="is-flex is-mobile" href="#解决方法："><span>解决方法：</span></a></li><li><a class="is-flex is-mobile" href="#效果预览"><span>效果预览</span></a></li></ul></li><li><a class="is-flex is-mobile" href="#2-文章折叠"><span>2.文章折叠</span></a></li><li><a class="is-flex is-mobile" href="#3-博客评论数更新"><span>3.博客评论数更新</span></a></li><li><a class="is-flex is-mobile" href="#4-改中文"><span>4.改中文</span></a></li><li><a class="is-flex is-mobile" href="#5-yaml-front-matter"><span>5.yaml front matter</span></a><ul class="menu-list"><li><a class="is-flex is-mobile" href="#1）快速开始"><span>1）快速开始</span></a></li><li><a class="is-flex is-mobile" href="#2）参数解释"><span>2）参数解释</span></a></li><li><a class="is-flex is-mobile" href="#3）使用效果"><span>3）使用效果</span></a></li><li><a class="is-flex is-mobile" href="#4）总结"><span>4）总结</span></a></li></ul></li><li><a class="is-flex is-mobile" href="#6-widgets增减"><span>6.widgets增减</span></a></li><li><a class="is-flex is-mobile" href="#7-评论数"><span>7.评论数</span></a></li></ul></div></div><style>.menu-list > li > a.is-active + .menu-list { display: block; }.menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/mypicture.jpg" alt="Tlo_oh"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Tlo_oh</p><p class="is-size-6 is-block">现在多做一点，将来就少做一点</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>中国</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">4</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Weibo" href="https://weibo.com/removeif"><i class="fab fa-weibo"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:removeif@163.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Next" href="https://removeif.github.io/remove.io"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div><div><hr><p id="hitokoto">:D 一言句子获取中...</p><script type="text/javascript" defer>function getYiyan(){
+                                $.getJSON("https://v1.hitokoto.cn/", function (data) {
+                                if(data){
+                                    $('#hitokoto').html("");
+                                    $('#hitokoto').append("<strong style='color: #3273dc;'>"+data.hitokoto+"</strong>"+
+                                    "<p>"+"来源《"+data.from+"》</p><p>提供者-"+data.creator+"</p>");
+                                }});}
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});</script></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-03-07T14:49:05.916Z">2022-03-07</time></p><p class="title"><a href="/2022/03/07/Science%20Internet/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-03-07T14:49:05.916Z">2022-03-07</time></p><p class="title"><a href="/2022/03/07/Ubuntu%2020.04LTS%20%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9B%BE%E6%A0%87%E4%B8%A2%E5%A4%B1/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-03-07T14:49:05.912Z">2022-03-07</time></p><p class="title"><a href="/2022/03/07/Ubuntu%2020.04LTS%20%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E6%A0%87/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-03-07T14:49:05.908Z">2022-03-07</time></p><p class="title"><a href="/2022/03/07/hello-world/">Hello World</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/03/07/%E5%A4%8D%E8%AF%95/"><img src="/gallery/96715232_p0.png" alt="复试参考"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-03-07T05:13:00.000Z">2022-03-07</time></p><p class="title"><a href="/2022/03/07/%E5%A4%8D%E8%AF%95/">复试参考</a></p><p class="categories"><a href="/categories/Deep-Learning/">Deep Learning</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Deep-Learning/"><span class="level-start"><span class="level-item">Deep Learning</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><span class="level-start"><span class="level-item">博客搭建</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2022/03/"><span class="level-start"><span class="level-item">三月 2022</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9D%82%E9%A1%B9/"><span class="tag">杂项</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%8D%E8%AF%95/"><span class="tag">复试</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/"><span class="tag">统计学习</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Tlo_oh" height="28"></a><p class="size-small"><span>&copy; 2022 Tlo_oh</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a> &amp; <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">Amazing</a> <br><span>© <a href="http://www.beian.miit.gov.cn/" target="_blank">川ICP备88888888号-8（测试）</a><br></span><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        }var now = new Date();setInterval("createTime('2022/03/03 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif/hexo-theme-amazing"><i class="fab fa-github"></i></a></p></div><div class="sideMusic"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="/js/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meting-js style="width: auto;height: 2000px;" server="netease" type="playlist" id="2364053447" theme="#2980b9" loop="all" autoplay="false" order="list" storageName="aplayer-setting" lrctype="0" list-max-height="400px" fixed="true"></meting-js></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('60P1Vz5jjKRwSD6k66ARswSd-MdYXbMMI','bYS8KxsiT60tT1FA7YuO0jJh','Tlo_oh','undefined',true);})</script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script><script type="text/javascript">var pjax = new Pjax({
+            elements: "a",//代表点击链接就更新
+            selectors: [  //代表要更新的节点
+                ".section",
+                "title"
+            ],
+            cache: true,
+            cacheBust:false
+        })
+
+        function loadBusuanzi(){
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js", function () {});
+        }
+
+        // 开始 PJAX 执行的函数
+        document.addEventListener('pjax:send', function () {
+        });
+        
+        // PJAX 完成之后执行的函数，可以和上面的重载放在一起
+        document.addEventListener('pjax:complete', function () {
+            $(".section").css({opacity:1});
+            if(true){
+                $.getScript('/js/comment-issue-data.js',function(){loadIssueData('60P1Vz5jjKRwSD6k66ARswSd-MdYXbMMI','bYS8KxsiT60tT1FA7YuO0jJh','Tlo_oh','undefined',true);});
+            }
+            if(false){
+                loadMathJax();
+            }
+            loadMainJs(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings);
+            loadBackTop();
+            loadBusuanzi();
+            if(typeof loadBanner == 'function'){
+                loadBanner();
+            }
+        });</script></body></html>
