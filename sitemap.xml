@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/19/%E8%80%83%E7%94%9F%E8%87%AA%E8%BF%B0/</loc>
+    <loc>https://www.ferrystars.xyz/2022/03/13/%E5%A4%8D%E5%BC%8F%E5%8F%82%E8%80%83%E4%B9%A6%E7%AD%BE/</loc>
     
-    <lastmod>2022-03-20</lastmod>
+    <lastmod>2022-03-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -14,15 +14,6 @@
     <loc>https://www.ferrystars.xyz/2022/03/15/AI%E4%B8%93%E4%B8%9A/</loc>
     
     <lastmod>2022-03-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ferrystars.xyz/2022/03/13/%E5%A4%8D%E5%BC%8F%E5%8F%82%E8%80%83%E4%B9%A6%E7%AD%BE/</loc>
-    
-    <lastmod>2022-03-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -39,6 +30,15 @@
   
   <url>
     <loc>https://www.ferrystars.xyz/2022/03/06/ubuntu-docker/</loc>
+    
+    <lastmod>2022-03-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/2022/03/05/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</loc>
     
     <lastmod>2022-03-11</lastmod>
     
@@ -104,15 +104,6 @@
     <loc>https://www.ferrystars.xyz/2022/03/06/mytest/</loc>
     
     <lastmod>2022-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ferrystars.xyz/2022/03/01/%E5%9B%BE%E5%83%8F%E9%A2%84%E5%A4%84%E7%90%86/</loc>
-    
-    <lastmod>2022-03-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -243,6 +234,13 @@
   
   <url>
     <loc>https://www.ferrystars.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <lastmod>2022-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/categories/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</loc>
     <lastmod>2022-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
