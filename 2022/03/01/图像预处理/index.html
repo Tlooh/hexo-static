@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tlo_oh</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Tlo_oh"><meta name="msapplication-TileImage" content="/img/mypicture.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Tlo_oh"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="图像预处理  图像预处理 一、直方图均衡化 1.  opencv 读取图片 import cv2 as cv # 导入open cv  # 读取图片路径 img &amp;#x3D; cv.imread(&amp;quot;&amp;#x2F;home&amp;#x2F;tlooh&amp;#x2F;下载&amp;#x2F;Data&amp;#x2F;tmp&amp;#x2F;1&amp;quot;,cv.IMREAD_GRAYSCALE) # 显示图片，picture为显示窗口的title，第二个img为图片路径 cv.ims"><meta property="og:type" content="blog"><meta property="og:title" content="Tlo_oh"><meta property="og:url" content="https://www.ferrystars.xyz/2022/03/01/%E5%9B%BE%E5%83%8F%E9%A2%84%E5%A4%84%E7%90%86/"><meta property="og:site_name" content="Tlo_oh"><meta property="og:description" content="图像预处理  图像预处理 一、直方图均衡化 1.  opencv 读取图片 import cv2 as cv # 导入open cv  # 读取图片路径 img &amp;#x3D; cv.imread(&amp;quot;&amp;#x2F;home&amp;#x2F;tlooh&amp;#x2F;下载&amp;#x2F;Data&amp;#x2F;tmp&amp;#x2F;1&amp;quot;,cv.IMREAD_GRAYSCALE) # 显示图片，picture为显示窗口的title，第二个img为图片路径 cv.ims"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://www.ferrystars.xyz/img/mypicture.jpg"><meta property="article:published_time" content="2022-03-01T07:54:40.206Z"><meta property="article:modified_time" content="2022-03-01T08:59:20.621Z"><meta property="article:author" content="Tlo_oh"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/mypicture.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.ferrystars.xyz/2022/03/01/%E5%9B%BE%E5%83%8F%E9%A2%84%E5%A4%84%E7%90%86/"},"headline":"Tlo_oh","image":["https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/Cxu5vaBVotVo9A8KDt5QgMusQlTy5ZEY0_dbtGhkk48.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/2sVN78-9f92jgg1Id0PHKW2NeFjS7Q9rl1uBrpPqUOE.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/FToQWsQaQYovkQyr91ngycpFVGUABnyhIeC_2D1N0O8.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/JL7apNAbnxzcw3jZDvlkdI456fWrm99EJ6E1wpf46hM.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/xLIT4OtAHGI5PFlRtON4IxD4yPdIdwA1TcgXEic8WxU.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/JXVlhMWgMpirvcyTa_CTgyfMYtvj4L4Hk3xjILaENa0.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/v4FDdqadxDP-kiDH1Aeh_OFUSIPUD_VN-oFzzv9C9PM.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/qVEo8L1Ppy-yloEbbSRK9SMN8a3S7HCdQZTSTFOLmdM.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/Wc6l4h_JM4rLFNOIEmWuESJM8W4M8F-y0HImD7scy9E.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/n_BiRWGsr34qOu7xnmvhjWJMUFSGCl46FNT_9rPeRf4.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/cer7BpozCcxgLBgYWd6UUM38ErwgeSkc11qFBIMoy9M.png","https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/NriY7X1o98mtkvjlujPOEJ_KUBqb7s6X-cqvnxv8awU.png"],"datePublished":"2022-03-01T07:54:40.206Z","dateModified":"2022-03-01T08:59:20.621Z","author":{"@type":"Person","name":"Tlo_oh"},"description":"图像预处理  图像预处理 一、直方图均衡化 1.  opencv 读取图片 import cv2 as cv # 导入open cv  # 读取图片路径 img &#x3D; cv.imread(&quot;&#x2F;home&#x2F;tlooh&#x2F;下载&#x2F;Data&#x2F;tmp&#x2F;1&quot;,cv.IMREAD_GRAYSCALE) # 显示图片，picture为显示窗口的title，第二个img为图片路径 cv.ims"}</script><link rel="canonical" href="https://www.ferrystars.xyz/2022/03/01/%E5%9B%BE%E5%83%8F%E9%A2%84%E5%A4%84%E7%90%86/"><link rel="icon" href="/img/mypicture.jpg"><meta name="referrer" content="no-referrer-when-downgrade"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><script async="" referrerpolicy="no-referrer" src="//cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script src="/js/md5.min.js"></script><meta name="generator" content="Hexo 5.4.1"></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Tlo_oh" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/media">Media</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Join Gitter" href="https://gitter.im/hexo-theme-amazing/community"><i class="fab fa-gitter"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif/hexo-theme-amazing"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><!--!--><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2022-03-01  <a class="commentCountImg" href="/2022/03/01/%E5%9B%BE%E5%83%8F%E9%A2%84%E5%A4%84%E7%90%86/#comment-container"><span class="display-none-class">/2022/03/01/图像预处理/</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="cba40b0c35428ef44a8f224313ec4c74">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>6 分钟  <i class="fas fa-pencil-alt"> </i>0.9 k</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile"> </h1><div class="content"><!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>图像预处理</title>
+</head>
+<body><h1 id='图像预处理'>图像预处理</h1>
+<h2 id='一直方图均衡化'>一、直方图均衡化</h2>
+<h3 id='1--opencv-读取图片'>1.  opencv 读取图片</h3>
+<pre><code class='language-python' lang='python'>import cv2 as cv # 导入open cv
+
+# 读取图片路径
+img = cv.imread(&quot;/home/tlooh/下载/Data/tmp/1&quot;,cv.IMREAD_GRAYSCALE)
+# 显示图片，picture为显示窗口的title，第二个img为图片路径
+cv.imshow(&quot;picture&quot;,img)
+# 参数=0: （也可以是小于0的数值）一直显示，不会有返回值      
+# 若在键盘上按下一个键即会消失 ，则会返回一个按键对应的ascii码值       
+# 参数&gt;0:显示多少毫秒        超过这个指定时间则返回-1
+cv.waitKey(1000)
+# 摧毁所有窗口
+cv.destroyAllWindows()
+</code></pre>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/Cxu5vaBVotVo9A8KDt5QgMusQlTy5ZEY0_dbtGhkk48.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>cv.IMREAD_GRAYSCALE </p>
+<p>这个参数应该是灰度化，更多的的灰度处理方式可以看这里：<a target="_blank" rel="noopener" href='https://blog.csdn.net/qq_35069382/article/details/95218964?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_paycolumn_v3&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_paycolumn_v3&amp;utm_relevant_index=1'>参考博客</a></p>
+<p>&nbsp;</p>
+<h3 id='2-直方图均衡化'>2. 直方图均衡化</h3>
+<p>很详细的一篇参考博客：<a target="_blank" rel="noopener" href='https://www.cnblogs.com/wj-1314/p/9444056.html'>OpenCV计算机视觉学习（9）——图像直方图 &amp; 直方图均衡化</a></p>
+<pre><code class='language-python' lang='python'>
+import cv2 as cv
+
+# 读取图像，并灰度化
+img = cv.imread(&quot;/home/tlooh/下载/Data/tmp/1&quot;,cv.IMREAD_GRAYSCALE)
+
+# 调用函数cv.calcHist() 绘制直方图
+img_hist = cv.calcHist([img],[0],None,[256],[0,256])
+
+# 调用函数 cv.equalizeHist() 实现直方图均衡化
+result_img = cv.equalizeHist(img)
+
+# 显示两幅图像对比
+cv.imshow(&#39;before&#39;,img)
+cv.imshow(&#39;after&#39;,result_img)
+
+cv.waitKey(5000)
+cv.destroyAllWindows()
+
+
+# 使用matplotlib进行直方图绘制
+import matplotlib.pyplot as plt
+
+# 前后两副直方图对比
+plt.hist(img.ravel(),256)
+plt.show()
+
+plt.hist(result_img.ravel(),256)
+plt.show()
+
+
+</code></pre>
+<p>关于cv.calcHist() 函数参数意义：</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/2sVN78-9f92jgg1Id0PHKW2NeFjS7Q9rl1uBrpPqUOE.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>&nbsp;</p>
+<p>运行效果（效果其实挺明显的）：</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/FToQWsQaQYovkQyr91ngycpFVGUABnyhIeC_2D1N0O8.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>直方图对比，可以看到原来灰度值频率很低的地方得到了填充，也就是所谓的均衡化；</p>
+<p>想要追求效果明显的化，可以找一下局部过曝，或者亮度不均匀的图片进行测试，效果会更加明细。</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/JL7apNAbnxzcw3jZDvlkdI456fWrm99EJ6E1wpf46hM.png" referrerpolicy="no-referrer" alt="image"></p>
+<h3 id='3--双线性插值'>3.  双线性插值</h3>
+<pre><code class='language-python' lang='python'>tf.gfile.FastGFile(path,decodestyle) 
+
+函数功能：实现对图片的读取。 
+函数参数： (1)path：图片所在路径
+         (2)decodestyle：图片的解码方式。(‘r’：UTF-8编码； ‘rb’：非UTF-8编码)
+</code></pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4 id='1-报错----attributeerror-module-tensorflow-has-no-attribute-gfile'>(1) 报错    AttributeError: module &#39;tensorflow&#39; has no attribute &#39;gfile&#39;</h4>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/xLIT4OtAHGI5PFlRtON4IxD4yPdIdwA1TcgXEic8WxU.png" referrerpolicy="no-referrer" alt="image">
+#### </p>
+<h5 id='原因与解决方案'>原因与解决方案</h5>
+<p>然后百度，发现是说问题产生的原因：在当前的版本中，gfile已经定义在io包的file_io.py中。</p>
+<pre><code class='language-python' lang='python'>img_raw_data = tf.gfile.FastGFile(imgpath2,&#39;rb&#39;).read()
+</code></pre>
+<p>于是改为</p>
+<pre><code class='language-python' lang='python'>    img_raw_data = tf.io.gfile.FastGFile(imgpath2,&#39;rb&#39;).read()
+</code></pre>
+<p>仍然报错</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/JXVlhMWgMpirvcyTa_CTgyfMYtvj4L4Hk3xjILaENa0.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>然后查阅官方文档才发现，调用形式发生变化，这里附上官方文档地址：<a target="_blank" rel="noopener" href='https://www.tensorflow.org/api_docs/python/tf/io/gfile/GFile?hl=zh-cn'>TensorFlow-Python 文档</a></p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/v4FDdqadxDP-kiDH1Aeh_OFUSIPUD_VN-oFzzv9C9PM.png" referrerpolicy="no-referrer" alt="image"></p>
+<pre><code class='language-python' lang='python'>img_raw_data = tf.io.gfile.GFile(imgpath2,&#39;rb&#39;).read()
+</code></pre>
+<p>至此，问题解决</p>
+<p>&nbsp;</p>
+<h4 id='2--报错-attributeerror-module-tensorflowapiv2image-has-no-attribute-resizeimages'>(2)  报错 AttributeError: module &#39;tensorflow._api.v2.image&#39; has no attribute &#39;resize_images&#39; </h4>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/qVEo8L1Ppy-yloEbbSRK9SMN8a3S7HCdQZTSTFOLmdM.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>原因应该如先前一样，版本高了，函数发生了变化：</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/Wc6l4h_JM4rLFNOIEmWuESJM8W4M8F-y0HImD7scy9E.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>代码如下，问题解决！</p>
+<pre><code class='language-python' lang='python'># 双线性插值    
+resized = tf.image.resize(img_data, target_size, antialias=&#39;bilinear&#39;)
+</code></pre>
+<p>&nbsp;</p>
+<p>(3) plt.imshow()  和 cv.imshow() 展示的图片不一样？</p>
+<p>问题如下，img_show() 是我自己封装的cv展示函数</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/n_BiRWGsr34qOu7xnmvhjWJMUFSGCl46FNT_9rPeRf4.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>&nbsp;</p>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/cer7BpozCcxgLBgYWd6UUM38ErwgeSkc11qFBIMoy9M.png" referrerpolicy="no-referrer" alt="image"></p>
+<p>&nbsp;</p>
+<p>原理很简单：</p>
+<p>opencv的是按照B、G、R 三个通道读取图片；</p>
+<p>matplotlib.pyplot 则是R、G、B模式，也就是说opencv有点特别</p>
+<p>所以我们需要用函数  cv.cvtColor( xxx , cv.COLOR_BGR2RGB)  # CV BGR转变RGB</p>
+<pre><code class='language-python' lang='python'>plt.imshow(resized_photo)
+plt.show()
+        
+# 通道转换
+        resized_photo = cv.cvtColor(resized_photo,cv.COLOR_BGR2RGB)
+        img_show(resized_photo)
+        
+</code></pre>
+<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/NriY7X1o98mtkvjlujPOEJ_KUBqb7s6X-cqvnxv8awU.png" referrerpolicy="no-referrer" alt="image"></p>
+<h3 id='问题解决'>问题解决！！</h3>
+</body>
+</html></div><div class="article-licensing box"><div class="licensing-title"><p><a href="https://www.ferrystars.xyz/2022/03/01/图像预处理/">https://www.ferrystars.xyz/2022/03/01/图像预处理/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><a href="https://www.ferrystars.xyz"><p>Tlo_oh</p></a></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-03-01</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-03-01</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="recommend-area"><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/2022/03/19/%E8%80%83%E7%94%9F%E8%87%AA%E8%BF%B0/" target="_blank"> </a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/03/05/Blog%E9%83%A8%E7%BD%B2/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Blog部署</span></a></div></nav><!--!--><div class="card"><div class="card-content"><div class="title is-5">评论</div><div class="content" id="comment-container"></div><script>var valine = new Valine({
+            el: '#comment-container' ,
+            notify: false,
+            verify: false,
+            appId: '60P1Vz5jjKRwSD6k66ARswSd-MdYXbMMI',
+            appKey: 'bYS8KxsiT60tT1FA7YuO0jJh',
+            placeholder: '留下您的高见！',
+            avatar: 'mp',
+            avatarForce: false,
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            visitor: false,
+            highlight: true,
+            recordIP: false,
+            path:'/2022/03/01/图像预处理/',
+            lang:'zh-CN',
+            enableQQ:true,
+            requiredFields:["nick","mail","link"]
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><!--!--><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/mypicture.jpg" alt="Tlo_oh"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Tlo_oh</p><p class="is-size-6 is-block">当你踏出那一步，就是孤天里的鹤</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>中国</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">10</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Weibo" href="https://weibo.com/removeif"><i class="fab fa-weibo"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="/tloooh888@gmail.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Next" href="https://removeif.github.io/remove.io"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div><div><hr><p id="hitokoto">:D 一言句子获取中...</p><script type="text/javascript" defer>function getYiyan(){
+                                $.getJSON("https://v1.hitokoto.cn/", function (data) {
+                                if(data){
+                                    $('#hitokoto').html("");
+                                    $('#hitokoto').append("<strong style='color: #3273dc;'>"+data.hitokoto+"</strong>"+
+                                    "<p>"+"来源《"+data.from+"》</p><p>提供者-"+data.creator+"</p>");
+                                }});}
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});</script></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-03-19T09:35:01.052Z">2022-03-19</time></p><p class="title"><a href="/2022/03/19/%E8%80%83%E7%94%9F%E8%87%AA%E8%BF%B0/"> </a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/03/15/AI%E4%B8%93%E4%B8%9A/"><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220321132955.png" alt="AI专业问题"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-03-15T03:30:06.000Z">2022-03-15</time></p><p class="title"><a href="/2022/03/15/AI%E4%B8%93%E4%B8%9A/">AI专业问题</a></p><p class="categories"><a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/03/13/%E5%A4%8D%E5%BC%8F%E5%8F%82%E8%80%83%E4%B9%A6%E7%AD%BE/"><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220313094143.jpeg" alt="复式参考书签"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-03-13T01:32:43.000Z">2022-03-13</time></p><p class="title"><a href="/2022/03/13/%E5%A4%8D%E5%BC%8F%E5%8F%82%E8%80%83%E4%B9%A6%E7%AD%BE/">复式参考书签</a></p><p class="categories"><a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9F/">研究生</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/03/11/clash-Tun%E6%A8%A1%E5%BC%8F/"><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220313084350.png" alt="clash Tun模式实现设备共享上网"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-03-11T15:40:06.000Z">2022-03-11</time></p><p class="title"><a href="/2022/03/11/clash-Tun%E6%A8%A1%E5%BC%8F/">clash Tun模式实现设备共享上网</a></p><p class="categories"><a href="/categories/Linux/">Linux</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2022/03/08/leetcode-record/"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic3.zhimg.com%2Fv2-47ddc1485d3220d1af40df818b7a855e_180x120.jpg&amp;refer=http%3A%2F%2Fpic3.zhimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1649343841&amp;t=34cac5a54e61996bf623087d53fcc0c2" alt="leetcode-剑指offer"></a></figure><div class="media-content"><p class="date"><time dateTime="2022-03-08T14:59:20.000Z">2022-03-08</time></p><p class="title"><a href="/2022/03/08/leetcode-record/">leetcode-剑指offer</a></p><p class="categories"><a href="/categories/leetcode/">leetcode</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Deep-Learning/"><span class="level-start"><span class="level-item">Deep Learning</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Linux/"><span class="level-start"><span class="level-item">Linux</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/leetcode/"><span class="level-start"><span class="level-item">leetcode</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"><span class="level-start"><span class="level-item">人工智能</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><span class="level-start"><span class="level-item">博客搭建</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9F/"><span class="level-start"><span class="level-item">研究生</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"><span class="level-start"><span class="level-item">科学上网</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2022/03/"><span class="level-start"><span class="level-item">三月 2022</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%E6%9D%82%E9%A1%B9/"><span class="tag">杂项</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ubuntu/"><span class="tag">ubuntu</span><span class="tag is-grey-lightest">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Deep-Learning/"><span class="tag">Deep Learning</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Machine-Learning/"><span class="tag">Machine Learning</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/python/"><span class="tag">python</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%88%B7%E9%A2%98/"><span class="tag">刷题</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%8D%E8%AF%95/"><span class="tag">复试</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%8D%E8%AF%95%E5%8F%82%E8%80%83/"><span class="tag">复试参考</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0/"><span class="tag">统计学习</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Tlo_oh" height="28"></a><p class="size-small"><span>&copy; 2022 Tlo_oh</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a> &amp; <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">Amazing</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        }var now = new Date();setInterval("createTime('2022/03/03 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif/hexo-theme-amazing"><i class="fab fa-github"></i></a></p></div><div class="sideMusic"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="/js/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meting-js style="width: auto;height: 2000px;" server="netease" type="playlist" id="2364053447" theme="#2980b9" loop="all" autoplay="false" order="list" storageName="aplayer-setting" lrctype="0" list-max-height="400px" fixed="true"></meting-js></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('60P1Vz5jjKRwSD6k66ARswSd-MdYXbMMI','bYS8KxsiT60tT1FA7YuO0jJh','Tlo_oh','undefined',true);})</script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script><script type="text/javascript">var pjax = new Pjax({
+            elements: "a",//代表点击链接就更新
+            selectors: [  //代表要更新的节点
+                ".section",
+                "title"
+            ],
+            cache: true,
+            cacheBust:false
+        })
+
+        function loadBusuanzi(){
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js", function () {});
+        }
+
+        // 开始 PJAX 执行的函数
+        document.addEventListener('pjax:send', function () {
+        });
+        
+        // PJAX 完成之后执行的函数，可以和上面的重载放在一起
+        document.addEventListener('pjax:complete', function () {
+            $(".section").css({opacity:1});
+            if(true){
+                $.getScript('/js/comment-issue-data.js',function(){loadIssueData('60P1Vz5jjKRwSD6k66ARswSd-MdYXbMMI','bYS8KxsiT60tT1FA7YuO0jJh','Tlo_oh','undefined',true);});
+            }
+            if(false){
+                loadMathJax();
+            }
+            loadMainJs(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings);
+            loadBackTop();
+            loadBusuanzi();
+            if(typeof loadBanner == 'function'){
+                loadBanner();
+            }
+        });</script></body></html>
