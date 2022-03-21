@@ -7,6 +7,8 @@
 </blockquote>
 <!--more--->
 
+<!--more--->
+
 
 
 <h3 id="1-opencv-读取图片"><a href="#1-opencv-读取图片" class="headerlink" title="1.  opencv 读取图片"></a>1.  opencv 读取图片</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2 <span class="keyword">as</span> cv <span class="comment"># 导入open cv</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取图片路径</span></span><br><span class="line">img = cv.imread(<span class="string">&quot;/home/tlooh/下载/Data/tmp/1&quot;</span>,cv.IMREAD_GRAYSCALE)</span><br><span class="line"><span class="comment"># 显示图片，picture为显示窗口的title，第二个img为图片路径</span></span><br><span class="line">cv.imshow(<span class="string">&quot;picture&quot;</span>,img)</span><br><span class="line"><span class="comment"># 参数=0: （也可以是小于0的数值）一直显示，不会有返回值      </span></span><br><span class="line"><span class="comment"># 若在键盘上按下一个键即会消失 ，则会返回一个按键对应的ascii码值       </span></span><br><span class="line"><span class="comment"># 参数&gt;0:显示多少毫秒        超过这个指定时间则返回-1</span></span><br><span class="line">cv.waitKey(<span class="number">1000</span>)</span><br><span class="line"><span class="comment"># 摧毁所有窗口</span></span><br><span class="line">cv.destroyAllWindows()</span><br></pre></td></tr></table></figure>
