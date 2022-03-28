@@ -10,7 +10,7 @@
 
 <h2 id="1、损失函数"><a href="#1、损失函数" class="headerlink" title="1、损失函数"></a>1、损失函数</h2><h3 id="1）定义"><a href="#1）定义" class="headerlink" title="1）定义"></a>1）定义</h3><p>在深度学习中, 损失函数是用来衡量模型参数的质量的函数, 衡量的方式是比较模型输出和真实输出的差异；</p>
 <p>四种叫法：</p>
-<p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220315202933.png" alt="image-20220315202930512"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tlooh/blog-imgs/blog202203281349380.png"></p>
 <h3 id="2）应用地方"><a href="#2）应用地方" class="headerlink" title="2）应用地方"></a>2）应用地方</h3><p>分类任务中使用最多的是<strong>交叉熵损失函数</strong>；</p>
 <p>多分类任务通常使用<code>softmax</code>将<code>logits</code>转换为概率的形式，所以多分类的<strong>交叉熵损失</strong>也叫做<code>softmax损失</code></p>
 <h2 id="2、梯度下降"><a href="#2、梯度下降" class="headerlink" title="2、梯度下降"></a>2、梯度下降</h2><p>用于优化深度学习</p>
@@ -19,7 +19,7 @@
 <p><strong>梯度：</strong>在训练过程中损失函数对权重的偏导数就是损失函数在该位置点的梯度。</p>
 <p>沿着负梯度方向移动，就可以到达损失函数底部，从而使损失函数最小化。这种利用损失函数的梯度迭代地寻找局部最小值的过程就是梯度下降的过程。</p>
 <p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220315204054.png" alt="image-20220315204053554"></p>
-<h3 id="2）算法中遇到的问题"><a href="#2）算法中遇到的问题" class="headerlink" title="2）算法中遇到的问题"></a>2）算法中遇到的问题</h3><p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220315211400.png" alt="image-20220315211359412"></p>
+<h3 id="2）算法中遇到的问题"><a href="#2）算法中遇到的问题" class="headerlink" title="2）算法中遇到的问题"></a>2）算法中遇到的问题</h3><p><img src="https://gitee.com/SysYolo/cloudimage/raw/master/img/ubuntu/20220315204054.png" alt="image-20220315211359412"></p>
 <h4 id="鞍点"><a href="#鞍点" class="headerlink" title="鞍点"></a>鞍点</h4><ul>
 <li>动量算法、动量梯度下降算法</li>
 </ul>
