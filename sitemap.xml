@@ -1,214 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
+  
   <url>
     <loc>https://www.ferrystars.xyz/2022/03/08/leetcode-record/</loc>
-    <lastmod>2022-03-30T11:22:57.637Z</lastmod>
-    <data>
-        <display>
-        <title>leetcode-剑指offer</title>
-        <pubTime>2022-03-08T14:59:20.000Z</pubTime>
-        
-        <tag>刷题 </tag>
-         
-        <tag>python </tag>
-         
-         
-           
-             
-              <breadCrumb title="leetcode" url="https://www.ferrystars.xyz/categories/leetcode/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2022-03-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
     <loc>https://www.ferrystars.xyz/2022/03/06/ubuntu-docker/</loc>
-    <lastmod>2022-03-28T07:28:59.582Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu 部署docker容器</title>
-        <pubTime>2022-03-06T02:39:11.000Z</pubTime>
-        
-        <tag>ubuntu </tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://www.ferrystars.xyz/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/15/AI%25E4%25B8%2593%25E4%25B8%259A/</loc>
-    <lastmod>2022-03-18T03:30:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>AI专业问题</title>
-        <pubTime>2022-03-15T03:30:06.000Z</pubTime>
-        
-        <tag>Deep Learning </tag>
-         
-        <tag>Machine Learning </tag>
-         
-         
-           
-             
-              <breadCrumb title="人工智能" url="https://www.ferrystars.xyz/categories/%25E4%25BA%25BA%25E5%25B7%25A5%25E6%2599%25BA%25E8%2583%25BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <loc>https://www.ferrystars.xyz/2022/03/15/AI%E4%B8%93%E4%B8%9A/</loc>
     
+    <lastmod>2022-03-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/11/clash-Tun%25E6%25A8%25A1%25E5%25BC%258F/</loc>
-    <lastmod>2022-03-11T15:40:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>clash Tun模式实现设备共享上网</title>
-        <pubTime>2022-03-11T15:40:06.000Z</pubTime>
-        
-        <tag>杂项 </tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://www.ferrystars.xyz/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <loc>https://www.ferrystars.xyz/2022/03/11/clash-Tun%E6%A8%A1%E5%BC%8F/</loc>
     
+    <lastmod>2022-03-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/05/%25E6%2595%25B0%25E5%25AD%2597%25E5%259B%25BE%25E5%2583%258F%25E5%25A4%2584%25E7%2590%2586/</loc>
-    <lastmod>2022-03-11T02:39:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>数字图像处理</title>
-        <pubTime>2022-03-05T05:38:55.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="数字图像处理" url="https://www.ferrystars.xyz/categories/%25E6%2595%25B0%25E5%25AD%2597%25E5%259B%25BE%25E5%2583%258F%25E5%25A4%2584%25E7%2590%2586/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <loc>https://www.ferrystars.xyz/2022/03/05/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</loc>
     
+    <lastmod>2022-03-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/05/Blog%25E9%2583%25A8%25E7%25BD%25B2/</loc>
-    <lastmod>2022-03-09T03:44:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>Blog部署</title>
-        <pubTime>2022-03-05T13:00:00.000Z</pubTime>
-        
-        <tag>杂项 </tag>
-         
-        <tag>blog </tag>
-         
-         
-           
-             
-              <breadCrumb title="博客搭建" url="https://www.ferrystars.xyz/categories/%25E5%258D%259A%25E5%25AE%25A2%25E6%2590%25AD%25E5%25BB%25BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <loc>https://www.ferrystars.xyz/2022/03/05/Blog%E9%83%A8%E7%BD%B2/</loc>
     
+    <lastmod>2022-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/07/Science%2520Internet/</loc>
-    <lastmod>2022-03-09T03:37:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu 安装Clash 科学上网</title>
-        <pubTime>2022-03-07T05:47:21.000Z</pubTime>
-        
-        <tag>ubuntu </tag>
-         
-         
-           
-             
-              <breadCrumb title="科学上网" url="https://www.ferrystars.xyz/categories/%25E7%25A7%2591%25E5%25AD%25A6%25E4%25B8%258A%25E7%25BD%2591/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <loc>https://www.ferrystars.xyz/2022/03/07/Science%20Internet/</loc>
     
+    <lastmod>2022-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/06/Ubuntu%252020.04LTS%2520%25E6%2596%2587%25E4%25BB%25B6%25E5%25A4%25B9%25E5%259B%25BE%25E6%25A0%2587%25E4%25B8%25A2%25E5%25A4%25B1/</loc>
-    <lastmod>2022-03-09T03:34:58.000Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu 20.04LTS 文件夹图标丢失</title>
-        <pubTime>2022-03-06T02:34:49.000Z</pubTime>
-        
-        <tag>杂项 </tag>
-         
-        <tag>ubuntu </tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://www.ferrystars.xyz/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <loc>https://www.ferrystars.xyz/2022/03/06/Ubuntu%2020.04LTS%20%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9B%BE%E6%A0%87%E4%B8%A2%E5%A4%B1/</loc>
     
+    <lastmod>2022-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
-    <loc>https://www.ferrystars.xyz/2022/03/06/Ubuntu%252020.04LTS%2520%25E6%2590%259C%25E7%258B%2597%25E8%25BE%2593%25E5%2585%25A5%25E6%25B3%2595%25E4%25B8%258D%25E6%2598%25BE%25E7%25A4%25BA%25E5%259B%25BE%25E6%25A0%2587/</loc>
-    <lastmod>2022-03-09T03:31:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu 20.04LTS 搜狗输入法不显示图标</title>
-        <pubTime>2022-03-06T03:30:49.000Z</pubTime>
-        
-        <tag>杂项 </tag>
-         
-        <tag>ubuntu </tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://www.ferrystars.xyz/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <loc>https://www.ferrystars.xyz/2022/03/06/Ubuntu%2020.04LTS%20%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E6%A0%87/</loc>
     
+    <lastmod>2022-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <url>
     <loc>https://www.ferrystars.xyz/2022/03/06/mytest/</loc>
-    <lastmod>2022-03-07T08:24:08.649Z</lastmod>
-    <data>
-        <display>
-        <title>我的测试</title>
-        <pubTime>2022-03-06T12:00:00.000Z</pubTime>
-        
-        <tag>杂项 </tag>
-         
-        <tag>blog </tag>
-         
-         
-           
-             
-              <breadCrumb title="博客搭建" url="https://www.ferrystars.xyz/categories/%25E5%258D%259A%25E5%25AE%25A2%25E6%2590%25AD%25E5%25BB%25BA/"/>
-          
-        </display>
-    </data>
-    </url>
+    
+    <lastmod>2022-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  <url>
+    <loc>https://www.ferrystars.xyz/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/tags/Deep-Learning/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/tags/Machine-Learning/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/tags/%E6%9D%82%E9%A1%B9/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/tags/blog/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/tags/ubuntu/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/tags/%E5%88%B7%E9%A2%98/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/tags/python/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/categories/Linux/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/categories/leetcode/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ferrystars.xyz/categories/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2022-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 </urlset>
